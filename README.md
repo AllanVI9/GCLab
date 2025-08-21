@@ -1,3 +1,7 @@
+#Feito Por:
+#Allan Von Ivanov - RM98705
+#João Rodrigo - RM551319
+
 # Desafio — Garbage Collector no C#
 
 Este projeto foi desenvolvido como **atividade prática (Hands On)** da disciplina de C# (3ESC#).  

@@ -16,6 +16,8 @@ class Program
         var subscriber = new LeakySubscriber(publisher);
         tracker.Track("subscriber", subscriber);
 
+        subscriber.Dispose();
+
         // 2) LOH + cache estático sem política de expiração
         var lohBuffer = BigBufferHolder.Run();
         tracker.Track("lohBuffer", lohBuffer);
@@ -24,6 +26,7 @@ class Program
         var pinner = new Pinner();
         var pinned = pinner.PinLongTime();
         tracker.Track("pinnedBuffer", pinned);
+        pinner.ReleasePinnedMemory();
 
         // 4) Concatenação de string ineficiente
         var payload = ConcatWork.Bad();
@@ -33,11 +36,13 @@ class Program
         var logger = new Logger("log.txt");
         logger.WriteLines(10);
         tracker.Track("logger", logger);
+        logger.Dispose();
 
         // Dispara evento para "usar" o subscriber
         publisher.Raise();
 
         // Remover referências locais (mas problemas permanecem)
+        subscriber.Dispose();
         subscriber = null;
         publisher = null;
         pinned = null;

@@ -1,0 +1,15 @@
+C:\Users\labsfiap\Desktop\GCLab\GCLab\bin\Debug\net8.0\GCLab.exe
+C:\Users\labsfiap\Desktop\GCLab\GCLab\bin\Debug\net8.0\GCLab.deps.json
+C:\Users\labsfiap\Desktop\GCLab\GCLab\bin\Debug\net8.0\GCLab.runtimeconfig.json
+C:\Users\labsfiap\Desktop\GCLab\GCLab\bin\Debug\net8.0\GCLab.dll
+C:\Users\labsfiap\Desktop\GCLab\GCLab\bin\Debug\net8.0\GCLab.pdb
+C:\Users\labsfiap\Desktop\GCLab\GCLab\obj\Debug\net8.0\GCLab.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\labsfiap\Desktop\GCLab\GCLab\obj\Debug\net8.0\GCLab.AssemblyInfoInputs.cache
+C:\Users\labsfiap\Desktop\GCLab\GCLab\obj\Debug\net8.0\GCLab.AssemblyInfo.cs
+C:\Users\labsfiap\Desktop\GCLab\GCLab\obj\Debug\net8.0\GCLab.csproj.CoreCompileInputs.cache
+C:\Users\labsfiap\Desktop\GCLab\GCLab\obj\Debug\net8.0\GCLab.sourcelink.json
+C:\Users\labsfiap\Desktop\GCLab\GCLab\obj\Debug\net8.0\GCLab.dll
+C:\Users\labsfiap\Desktop\GCLab\GCLab\obj\Debug\net8.0\refint\GCLab.dll
+C:\Users\labsfiap\Desktop\GCLab\GCLab\obj\Debug\net8.0\GCLab.pdb
+C:\Users\labsfiap\Desktop\GCLab\GCLab\obj\Debug\net8.0\GCLab.genruntimeconfig.cache
+C:\Users\labsfiap\Desktop\GCLab\GCLab\obj\Debug\net8.0\ref\GCLab.dll

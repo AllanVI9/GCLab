@@ -11,6 +11,10 @@ class LeakySubscriber
         _publisher.OnSomething += Handle;
         _registry.Add(this);
     }
+    public void Dispose()
+    {
+        _publisher.OnSomething -= Handle;  // Remover o manipulador de evento
+    }
 
     private void Handle() { /* noop */ }
 }

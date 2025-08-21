@@ -5,22 +5,41 @@ namespace GCLab;
 // ===================================
 // 5) Recurso externo sem Dispose
 // ===================================
-class Logger
+public class Logger : IDisposable
 {
     private readonly StreamWriter _writer;
-    public Logger(string path)
-    {
-        _writer = new StreamWriter(path, append: true, Encoding.UTF8);
+    private bool _disposed = false;
+    public Logger(string path) { 
+        _writer = new StreamWriter(path, append: true, Encoding.UTF8); 
+    }
+    public void WriteLines(int count) {
+        for (int i = 0; i < count; i++) 
+            _writer.WriteLine($"linha {i}"); 
     }
 
-    public void WriteLines(int count)
+    public void Dispose()
     {
-        for (int i = 0; i < count; i++)
-            _writer.WriteLine($"linha {i}");
+        Dispose(true);
+        GC.SuppressFinalize(this); 
+    }
+
+    protected virtual void Dispose(bool disposing)
+    {
+        if (_disposed)
+            return;
+
+        if (disposing)
+        {
+            _writer?.Dispose();
+        }
+
+
+        _disposed = true;
     }
 
     ~Logger()
     {
-        Console.WriteLine("~Logger finalizer chamado (não dependa disso)");        
+        Console.WriteLine("Logger finalizer chamado");
+        Dispose(false); 
     }
 }

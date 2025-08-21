@@ -14,4 +14,11 @@ class Pinner
         _handle = GCHandle.Alloc(data, GCHandleType.Pinned); // pin prolongado
         return data;
     }
+    public void ReleasePinnedMemory()
+    {
+        if (_handle.IsAllocated)
+        {
+            _handle.Free();  
+        }
+    }
 }
