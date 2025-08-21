@@ -1,6 +1,7 @@
-#Feito Por:
-#Allan Von Ivanov - RM98705
-#João Rodrigo - RM551319
+# Feito Por:
+## Allan Von Ivanov - RM98705
+## João Rodrigo - RM551319
+
 
 # Desafio — Garbage Collector no C#
 
@@ -22,3 +23,4 @@ O objetivo é **analisar e corrigir problemas de memória** em uma aplicação s
   - Técnicas para lidar com LOH (Large Object Heap)
 
 ---
+
